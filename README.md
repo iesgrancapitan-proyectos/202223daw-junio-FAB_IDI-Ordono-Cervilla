@@ -15,7 +15,8 @@ README.md  bootstrap      config        package-lock.json  public     sh.html  u
 app        composer.json  database      package.json       resources  storage  vendor
 artisan    composer.lock  node_modules  phpunit.xml        routes     tests    vite.config.js
 
-   Nota: debe existir un directorio vendor bajo el directorio principal del proyecto (supongamos /var/www/fab-idi)
+   Nota1: debe existir un directorio vendor bajo el directorio principal del proyecto (supongamos /var/www/fab-idi)
+   Nota2: asegurate que el directorio "storage" tiene permisos de escritura para el user  www-data
 
 2.  Descarga e instalación de Composer en tu dispositivo:
 
