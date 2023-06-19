@@ -65,7 +65,7 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
 
 ## Información sobre cómo usarlo
  [Manual de usuario](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_1Doc_Manual_Usuario)
- [Manual del administrador] (https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_2Doc_Manual_Admin)
+ [Manual del administrador](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_2Doc_Manual_Admin)
  
  
 
