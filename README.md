@@ -64,10 +64,14 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
 6. Activa el site, reinicia el servicio web  y abre un navegador web con la direccion del site  
 
 ## Información sobre cómo usarlo
- [Manual de usuario](https:://github.com/iesgrancapitan-proyectos/202021daw_junio_Brilla-DavidCastilla-MariaMoreno/wiki/Manual_Usuario)
- Manual del administrador : 
+ [Manual de usuario](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_1Doc_Manual_Usuario)
+ [Manual del administrador] (https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_2Doc_Manual_Admin)
+ 
+ 
 
 
 ## Autores
+
 Alumnas: María Cervilla y Virginia Ordoño
+
 Tutora: Carmen Tripiana
