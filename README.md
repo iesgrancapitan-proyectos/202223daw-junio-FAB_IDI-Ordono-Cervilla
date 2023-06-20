@@ -4,7 +4,7 @@ Permite conocer el proyecto Fábrica de Ideas, obtener información de proyectos
 
 ## Instalación
 
-1. Clonación del repositorio
+1. Clonación del repositorio.
 
 Crea una nueva carpeta en tu sistema local donde clonar los archivos del proyecto fab-idi.
 
@@ -23,11 +23,11 @@ artisan    composer.lock  node_modules  phpunit.xml        routes     tests    v
     - Visita la página oficial de Composer en su página oficial y descarga el archivo composer.exe correspondiente.   Ejecuta el archivo descargado para iniciar el proceso  de instalación.
   -   Durante la instalación, se te solicitará establecer la ruta de PHP. Asegúrate de tener XAMPP u otro entorno de desarrollo con PHP instalado previamente.
   -   Verificar la instalación de Composer: en la terminal ejecutar  el comando
-           composer -v 
+        ##   composer -v 
       Nota: Si Composer está correctamente instalado, verás información sobre la versión instalada y otros detalles.
 
    -    Una vez que hayas instalado Composer y clonado el proyecto en la carpeta correspondiente, ir al directorio raíz del proyecto clonado y ejecutar:
-           composer update
+        ##   composer update
 
 3. Configurar la base de datos, sigue estos pasos:
 
@@ -48,16 +48,26 @@ artisan    composer.lock  node_modules  phpunit.xml        routes     tests    v
     MAIL_PASSWORD=
     MAIL_ENCRYPTION=tls
 
-    -     Ejecuta el siguiente comando para crear las tablas de la base de datos:
+    -     Ejecuta el siguiente comando publica todo tu esquema en la base de datos. También genera una tabla en la base de datos.
          php artisan migrate
 
 
 4. Ejecuta los siguientes comando para iniciar el servidor de desarrollo:
 
-        php artisan serve
+   4.1. Entorno de desarrollo:
+       ## php artisan serve
+      
+       ## npm run dev --host 
+        (h  y después r para reiniciar el servicio)
+        
+   4.2. Entorno de producción:
+     - Para ViteJS (estilos) :      ## npm run build
+     - 
+     - 
+     Nota: si ocurre el error   "PHP Fatal error: Uncaught ReflectionException: Class "view" does not exist in /var/www/proyecto/vendor/laravel/framework/src/Illuminate/Container/Container.php"
+      Solución: El archivo Composer.php no es una clase que hayamos creado nosotras sino que aparentemente viene a la carpeta Vendor por defecto. Sin embargo, he comprobado       que la carpeta Illuminate no aparece en nuestros proyectos y la aplicación funciona igual.  He buscado en internet y he visto que es un error habitual al desplegar en        Ubuntu. Dicen de ejecutar este omando:
 
-        npm run dev --host 
-        (h  y después r para reinicar el servicio)
+      ## composer dump-autoload -o
 
 5. Crea un site con DocumentRoot apuntando a la carpeta bajo /var/www en el que hayas desplegado el proyecto (ej: /var/www/fab-idi).
 Abre una terminal o línea de comandos en el directorio raíz del proyecto.
