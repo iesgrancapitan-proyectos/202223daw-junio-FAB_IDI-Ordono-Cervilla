@@ -2,7 +2,8 @@
 Aplicación web para centralizar los diferentes proyectos y actividades llevados a cabo por la red de innovación educativa interprovincial FAB-IDI (Red de Centros Educativos con un Itinerario de Investigación).
 Permite conocer el proyecto Fábrica de Ideas, obtener información de proyectos de investigación vigentes y disponibles en el curso actual  así como permitir la inscripción/participación en los mismos.
 
-## Instalación
+
+## Despliegue en Producción.
 
 1. Clonación del repositorio.
 
@@ -26,8 +27,10 @@ artisan    composer.lock  node_modules  phpunit.xml        routes     tests    v
         ##   composer -v 
       Nota: Si Composer está correctamente instalado, verás información sobre la versión instalada y otros detalles.
 
-   -    Una vez que hayas instalado Composer y clonado el proyecto en la carpeta correspondiente, ir al directorio raíz del proyecto clonado y ejecutar:
-        ##   composer update
+   -    Una vez que hayas instalado Composer y clonado el proyecto en la carpeta correspondiente, ir al directorio raíz del proyecto clonado (ej: /var/www/fab-idi)  y ejecutar:
+         ##   composer update
+         ## composer dump-autoload -o
+      Nota: el composer dump-autoload suele ser la solución  si ocurre el error   "PHP Fatal error: Uncaught ReflectionException: Class "view" does not exist in /var/www/proyecto/vendor/laravel/framework/src/Illuminate/Container/Container.php"
 
 3. Configurar la base de datos, sigue estos pasos:
 
@@ -49,25 +52,13 @@ artisan    composer.lock  node_modules  phpunit.xml        routes     tests    v
     MAIL_ENCRYPTION=tls
 
     -     Ejecuta el siguiente comando publica todo tu esquema en la base de datos. También genera una tabla en la base de datos.
-         php artisan migrate
+       ##   php artisan migrate
 
 
-4. Ejecuta los siguientes comando para iniciar el servidor de desarrollo:
-
-   4.1. Entorno de desarrollo:
-       ## php artisan serve
-      
-       ## npm run dev --host 
-        (h  y después r para reiniciar el servicio)
-        
-   4.2. Entorno de producción:
+4.   Ir al directorio raiz del proyecto (ej. /var/www/fab-idi) y ejecutar:
      - Para ViteJS (estilos) :      ## npm run build
-     - 
-     - 
-     Nota: si ocurre el error   "PHP Fatal error: Uncaught ReflectionException: Class "view" does not exist in /var/www/proyecto/vendor/laravel/framework/src/Illuminate/Container/Container.php"
-      Solución: El archivo Composer.php no es una clase que hayamos creado nosotras sino que aparentemente viene a la carpeta Vendor por defecto. Sin embargo, he comprobado       que la carpeta Illuminate no aparece en nuestros proyectos y la aplicación funciona igual.  He buscado en internet y he visto que es un error habitual al desplegar en        Ubuntu. Dicen de ejecutar este omando:
 
-      ## composer dump-autoload -o
+   Revisar la configuración de los archivos :  vite.config.js ,  package-lock.json y  package.json
 
 5. Crea un site con DocumentRoot apuntando a la carpeta bajo /var/www en el que hayas desplegado el proyecto (ej: /var/www/fab-idi).
 Abre una terminal o línea de comandos en el directorio raíz del proyecto.
@@ -79,7 +70,23 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
  
  [Manual del administrador](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_2Doc_Manual_Admin)
  
- 
+
+## Entorno de desarrollo.
+    En caso de que se desee modificar/ampliar la funcionalidad de este proyecto se deben repetir lo casos 1 al 3 indicados en el apartado de despligue. Además,
+    ejecuta los siguientes comando para iniciar el servidor de desarrollo:
+   
+       ## php artisan serve
+
+      ## node -v
+      ## npm create vite@latest  (para crear un proyecto)
+      Indicar nombre
+      Algunos de los templates para el scaffolding de proyectos que podremos encontrar disponibles incluyen Javascript Vanilla, React, Preact, Vue, Lit, Svelte...
+      Elegir "Vanilla" 
+      
+       ## npm install
+       ## npm run dev --host 
+        (h  y después r para reiniciar el servicio)
+
 
 
 ## Autores
