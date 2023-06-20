@@ -56,7 +56,8 @@ artisan    composer.lock  node_modules  phpunit.xml        routes     tests    v
 
 
 4.   Ir al directorio raiz del proyecto (ej. /var/www/fab-idi) y ejecutar:
-     - Para ViteJS (estilos) :      ## npm run build
+     - Para ViteJS (estilos) :
+       ## npm run build
 
    Revisar la configuración de los archivos :  vite.config.js ,  package-lock.json y  package.json
 
@@ -70,8 +71,8 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
     Se ha usado viteJS (con NodeJS),  PHP artisan , Sass y Composer
     En caso de que se desee modificar/ampliar la funcionalidad de este proyecto se deben repetir lo casos 1 al 3 indicados en el apartado de despligue. Además,
     ejecuta los siguientes comando para iniciar el servidor de desarrollo:
-   
-       ## php artisan serve
+
+      ## php artisan serve
 
       ## node -v
       ## npm create vite@latest  (para crear un proyecto)
