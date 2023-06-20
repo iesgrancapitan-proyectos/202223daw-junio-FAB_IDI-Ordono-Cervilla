@@ -65,13 +65,9 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
 
 6. Activa el site, reinicia el servicio web  y abre un navegador web con la direccion del site  
 
-## Información sobre cómo usarlo
- [Manual de usuario](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_1Doc_Manual_Usuario)
- 
- [Manual del administrador](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_2Doc_Manual_Admin)
- 
 
 ## Entorno de desarrollo.
+    Se ha usado viteJS (con NodeJS),  PHP artisan , Sass y Composer
     En caso de que se desee modificar/ampliar la funcionalidad de este proyecto se deben repetir lo casos 1 al 3 indicados en el apartado de despligue. Además,
     ejecuta los siguientes comando para iniciar el servidor de desarrollo:
    
@@ -88,6 +84,11 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
         (h  y después r para reiniciar el servicio)
 
 
+## Información sobre cómo usarlo
+ [Manual de usuario](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_1Doc_Manual_Usuario)
+ 
+ [Manual del administrador](https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla/wiki/10_2Doc_Manual_Admin)
+ 
 
 ## Autores
 
