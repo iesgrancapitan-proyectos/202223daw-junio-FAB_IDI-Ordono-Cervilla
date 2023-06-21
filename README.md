@@ -12,6 +12,7 @@ Crea una nueva carpeta en tu sistema local donde clonar los archivos del proyect
 Repsitorios https://github.com/iesgrancapitan-proyectos/202223daw-junio-FAB_IDI-Ordonez-Cervilla.git
 
 root@fabidi:/var/www/fab-idi# ls
+
 README.md  bootstrap      config        package-lock.json  public     sh.html  users.txt
 app        composer.json  database      package.json       resources  storage  vendor
 artisan    composer.lock  node_modules  phpunit.xml        routes     tests    vite.config.js
@@ -34,8 +35,8 @@ artisan    composer.lock  node_modules  phpunit.xml        routes     tests    v
 
 3. Configurar la base de datos, sigue estos pasos:
 
-    - Abre/crea el archivo .env que se debe encontrar en el directorio raíz del proyecto.
-    - En el archivo .env, busca las siguientes líneas de código y completa los campos correspondientes con los datos de tu base de datos local.
+    i- Abre/crea el archivo  ## .env que se debe encontrar en el directorio raíz del proyecto.
+    ii- En el archivo .env, busca las siguientes líneas de código y completa los campos correspondientes con los datos de tu base de datos local.
     DB_CONNECTION=mysql
     DB_HOST=
     DB_PORT=
@@ -51,7 +52,9 @@ artisan    composer.lock  node_modules  phpunit.xml        routes     tests    v
     MAIL_PASSWORD=
     MAIL_ENCRYPTION=tls
 
-    -     Ejecuta el siguiente comando publica todo tu esquema en la base de datos. También genera una tabla en la base de datos.
+   
+   
+   iii-     Ejecuta el siguiente comando publica todo tu esquema en la base de datos. También genera una tabla en la base de datos.
        ##   php artisan migrate
 
 
@@ -66,6 +69,11 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
 
 6. Activa el site, reinicia el servicio web  y abre un navegador web con la direccion del site  
 
+7. Llave de acceso.
+Generar en gmail para el email que usen los administradores en el que se les avisa de inscripciones.
+Cómo hacerlo: Ir a cuenta google-> seguridad-> cómo inicias sesion..-> Llaves de acceso).
+Este email + llave se configura en el fichero .env
+?????
 
 ## Entorno de desarrollo.
     Se ha usado viteJS (con NodeJS),  PHP artisan , Sass y Composer
