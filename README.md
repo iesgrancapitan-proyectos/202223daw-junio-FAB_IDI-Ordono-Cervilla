@@ -73,7 +73,27 @@ Abre una terminal o línea de comandos en el directorio raíz del proyecto.
 Generar en gmail para el email que usen los administradores en el que se les avisa de inscripciones.
 Cómo hacerlo: Ir a cuenta google-> seguridad-> cómo inicias sesion..-> Llaves de acceso).
 Este email + llave se configura en el fichero .env
-?????
+Para configurar el correo electrónico, sigue estos pasos:
+
+1. En tu cuenta de Gmail, accede a la sección de seguridad y activa la opción de acceso a aplicaciones menos seguras.
+
+2. Genera una contraseña de aplicación para tu cuenta de Gmail.
+
+3. Abre el archivo .env que se encuentra en el directorio raíz del proyecto.
+
+4. En el archivo .env, busca las siguientes líneas de código:
+
+    MAIL_MAILER=smtp
+   
+    MAIL_HOST=smtp.gmail.com
+   
+    MAIL_PORT=587
+   
+    MAIL_USERNAME= [tu correo electrónico de Gmail]
+   
+    MAIL_PASSWORD= [tu contraseña de aplicación de Gmail]
+   
+    MAIL_ENCRYPTION=tls
 
 ## Entorno de desarrollo.
     Se ha usado viteJS (con NodeJS),  PHP artisan , Sass y Composer
